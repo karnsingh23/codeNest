@@ -1,0 +1,48 @@
+.content {
+    margin: 50px auto;
+    padding: 1em;
+    width: 170px;
+    background: #1c1f2b;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+@property --angle{
+    syntax:"<angle>";
+    initial-value:0deg;
+    inherits: false;
+}
+
+.content::after,
+.content::before {
+    content: "";
+    position: absolute;
+    height: calc(100% + 5px); /* Adds padding size to height */
+    width: calc(100% + 5px);  /* Adds padding size to width */
+    background-image: conic-gradient(
+        from var(--angle),
+        transparent 70%,
+        #ff4545,
+        #00ff99,
+        #006aff,
+        #ff0095
+    );
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Corrected from translate:-50% -50% */
+    z-index: -1;
+    border-radius: 10px; /* Match the parent's border radius */
+    animation: 3s rotate linear infinite;
+}
+.content::before{
+    filter: blur(1.5rem);
+    opacity: 0.8;
+}
+@keyframes rotate{
+    from{
+        --angle:0deg;
+    }
+    to{
+        --angle:360deg;
+    }
+}

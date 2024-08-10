@@ -3,7 +3,7 @@ import React from 'react'
 function Newcard({ cardname, carddescription, image }) {
   return (
     <div className='flex justify-center margin-top'>
-      <div class="w-[300px] md:w-5/6 rounded-md border mt-12 ">
+      <div class="  w-[300px] md:w-5/6 rounded-md border mt-12 ">
         <img
           src={image}
           alt="Laptop"

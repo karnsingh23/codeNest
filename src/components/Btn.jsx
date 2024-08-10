@@ -1,11 +1,17 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { Navigate, useNavigate } from 'react-router-dom';
+import './btn.css'
 function Btn({btnname}) {
+  const Navigate=useNavigate()
+  const navigateDocs=()=>{
+    Navigate("/documentation")
+  }
   return (
-    <div className='flex justify-center items-center mt-9 mb-14'>
-        <button className='border-white border rounded-md  w-60 py-3 flex p-4 justify-between '>{btnname} <div><FontAwesomeIcon icon={faArrowRight} /></div></button>
-    </div>
+    
+        <button onClick={navigateDocs} className='content  flex  justify-between '>{btnname} <div><FontAwesomeIcon icon={faArrowRight} /></div></button>
+    
     
     
   )
