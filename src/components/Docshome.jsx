@@ -1,4 +1,8 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { NavLink } from 'react-router-dom';
+import './Docshome.css'
 
 function Docshome() {
   return (
@@ -31,7 +35,11 @@ function Docshome() {
         
         Community Support: Join our community to get help, share knowledge, and collaborate on projects.
       </p>
+      <div>
+        <NavLink className='content-w flex justify-center text-center gap-5 ' to='/html'>Getting Started with HTML  <div><FontAwesomeIcon icon={faArrowRight} /></div></NavLink>
+      </div>
     </div>
+    
   );
 }
 

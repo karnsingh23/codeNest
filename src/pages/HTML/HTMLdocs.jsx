@@ -1,7 +1,7 @@
 import React from 'react'
-import Navigation from '../components/Navigation'
-import Docslist from '../components/Docslist'
-import HTML from '../components/HTML'
+import Navigation from '../../components/Navigation'
+import Docslist from '../../components/Docslist'
+import HTML from '../../components/HTML/HTML'
 
 function HTMLdocs() {
   return (

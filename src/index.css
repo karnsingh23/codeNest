@@ -4,7 +4,7 @@
 
 
 :root {
-  
+  box-sizing: content-box;
   display: flex;
   justify-content: center;
   align-items: center;

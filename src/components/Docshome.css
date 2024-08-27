@@ -1,0 +1,53 @@
+.content-w {
+    margin: 50px auto;
+    padding: 1em;
+    width:100%;
+    background: #1c1f2b;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    border: none;
+}
+.content-w:hover{
+   
+    border: 1px solid #ff7700;
+}
+/* @property --angle{
+    syntax:"<angle>";
+    initial-value:0deg;
+    inherits: false;
+}
+
+.content-w::after,
+.content-w::before {
+    content: "";
+    position: absolute;
+    height: calc(100% + 5px);
+    width: calc(100% + 5px); 
+    background-image: conic-gradient(
+        from var(--angle),
+        transparent 70%,
+        #ff4545,
+        #00ff99,
+        #006aff,
+        #ff0095
+    );
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    z-index: -1;
+    border-radius: 10px; 
+    animation: 5s rotate linear infinite;
+}
+.content-w::before{
+    filter: blur(1rem);
+    opacity: 0.1;
+}
+@keyframes rotate{
+    from{
+        --angle:0deg;
+    }
+    to{
+        --angle:360deg;
+    }
+} */
